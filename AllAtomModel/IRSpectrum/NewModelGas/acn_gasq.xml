@@ -1,0 +1,49 @@
+<ForceField>
+<AtomTypes>
+<Type class="ACN_H02" element="H" mass="1.008000" name="acn_h02" />
+<Type class="ACN_C01" element="C" mass="12.011000" name="acn_c01" />
+<Type class="ACN_H04" element="H" mass="1.008000" name="acn_h04" />
+<Type class="ACN_H03" element="H" mass="1.008000" name="acn_h03" />
+<Type class="ACN_C00" element="C" mass="12.011000" name="acn_c00" />
+<Type class="ACN_N05" element="N" mass="14.007000" name="acn_n05" />
+</AtomTypes>
+<Residues>
+<Residue name="ACN">
+<Atom name="C00" type="acn_c00" />
+<Atom name="C01" type="acn_c01" />
+<Atom name="H02" type="acn_h02" />
+<Atom name="H03" type="acn_h03" />
+<Atom name="H04" type="acn_h04" />
+<Atom name="N05" type="acn_n05" />
+<Bond from="0" to="1" />
+<Bond from="0" to="2" />
+<Bond from="0" to="3" />
+<Bond from="0" to="4" />
+<Bond from="1" to="5" />
+</Residue>
+</Residues>
+<HarmonicBondForce>
+<Bond class1="ACN_C01" class2="ACN_C00" k="284474.743137228" length="0.14487027865498273" />
+<Bond class1="ACN_H02" class2="ACN_C00" k="307596.171586072" length="0.10848494316837134" />
+<Bond class1="ACN_H03" class2="ACN_C00" k="307596.171586072" length="0.10848494316837134" />
+<Bond class1="ACN_H04" class2="ACN_C00" k="307596.171586072" length="0.10848494316837134" />
+<Bond class1="ACN_N05" class2="ACN_C01" k="1025368.4112291974" length="0.1164653252445058" />
+</HarmonicBondForce>
+<HarmonicAngleForce>
+<Angle angle="1.920368613430537" class1="ACN_C01" class2="ACN_C00" class3="ACN_H02" k="519.5179502177307" />
+<Angle angle="1.920368613430537" class1="ACN_C01" class2="ACN_C00" class3="ACN_H03" k="519.5179502177307" />
+<Angle angle="1.920368613430537" class1="ACN_C01" class2="ACN_C00" class3="ACN_H04" k="519.5179502177307" />
+<Angle angle="3.141592653589793" class1="ACN_C00" class2="ACN_C01" class3="ACN_N05" k="272.9734133711327" />
+<Angle angle="1.9007981364675326" class1="ACN_H02" class2="ACN_C00" class3="ACN_H03" k="340.8733986810268" />
+<Angle angle="1.9007981364675326" class1="ACN_H02" class2="ACN_C00" class3="ACN_H04" k="340.8733986810268" />
+<Angle angle="1.9007981364675326" class1="ACN_H03" class2="ACN_C00" class3="ACN_H04" k="340.8733986810268" />
+</HarmonicAngleForce>
+<NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
+<Atom charge="-0.579275" epsilon="0.276144" sigma="0.350000" type="acn_c00" />
+<Atom charge="0.484946" epsilon="0.276144" sigma="0.330000" type="acn_c01" />
+<Atom charge="0.197461" epsilon="0.125520" sigma="0.250000" type="acn_h03" />
+<Atom charge="0.197461" epsilon="0.125520" sigma="0.250000" type="acn_h04" />
+<Atom charge="0.197461" epsilon="0.125520" sigma="0.250000" type="acn_h02" />
+<Atom charge="-0.498054" epsilon="0.711280" sigma="0.320000" type="acn_n05" />
+</NonbondedForce>
+</ForceField>
